@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Food Management</title>
+
+    </head>
+
+    <body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Food Recipe's</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        Add Food
+                    </div>
+                    <div class="card-body">
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="Food">Food Name</label>
+                                <input type="text" id="Food"
+                                    class="form-control"
+                                    placeholder="Enter food name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Chef">Chef Name</label>
+                                <input type="text" id="Chef"
+                                    class="form-control"
+                                    placeholder="Enter chef name" required>
+                            </div>
+                            <button type="submit" id="submitBtn"
+                                class="btn btn-dark btn-block">
+                                Add Food
+                            </button>
+                            <button type="button" id="updateBtn"
+                                class="btn btn-success btn-block d-none">
+                                Update Food
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        Food List
+                    </div>
+
+                    <div class="card-body">
+                        <ul class="list-group" id="list"></ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Spinner -->
+    <div class="spinner d-none" id="spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
